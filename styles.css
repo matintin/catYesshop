@@ -1,0 +1,150 @@
+*{
+	margin:0;
+	padding:0;
+}
+.clear::after {
+	clear:both;
+	content:"";
+	display:table;
+}
+body {
+	font-family: helvetica;
+	background-color: #f5f5f5;
+}
+.top {
+	width: 100%;
+	height:150px;
+}
+.container {
+	height: auto;
+}
+.bannerImg {
+	width:100%;
+	height:400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 30px;
+}
+.main {
+	width: 100%;
+}
+.sideWrap {
+	width:980px;
+	margin:0 auto;
+}
+.leftSide {
+	float:left;
+	width: 30%;
+	height:600px;
+}
+.rightSide {
+	float:right;
+	width:65%;
+	height:1000px;
+}
+.sideBox {
+	width:90%;
+	margin-bottom: 20px;
+	border:1px #d7d7d7 solid;
+}
+.sideBox p {
+	color:#fff;
+	display: inline-block;
+}
+.sideTop {
+	background-color: #669934;
+	height: 30px;
+	line-height: 30px;
+}
+.sideTop p {
+	text-indent: 15px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.sideMid {
+	background-color: #fff;
+	padding: 10px 0;
+}
+.researchWrap {
+	width:80%;
+	margin:0 auto;
+	border:1px #ddd solid;
+	height:25px;
+
+}
+.research {
+	float:left;
+	width:90%;
+	outline: none;
+	border: none;
+	padding: 7px 0;
+	text-indent:5px;
+	font-size: 10px;
+}
+.researchButton {
+	float:left;
+	border-left: 1px #ddd solid;
+	text-align: center;	
+	width: 9.3%;
+	padding: 3px 0;
+	background-color: #fff;
+}
+.researchButton i {
+	display: inline-block;
+	height:100%;
+	vertical-align: middle;
+	color:#669934;
+}
+.catList li {
+	list-style-type: none;
+	margin-bottom: 1px;
+}
+.catList li a{
+	color:#000;
+	text-decoration: none;
+	text-indent:15px;
+	display: inline-block;
+	font-size: 13px;
+}
+.catList li a span {
+	color:#669934;
+	font-size: 12px;
+}
+.sideTop i {
+	display: inline-block;
+	height:100%;
+	vertical-align: top;
+	color:#f5f5f5;
+	margin-right: 3px;
+}
+.sideTop>.textIndent {
+	text-indent: 5px;
+}
+.clear:after {
+	clear:both;
+	content:"";
+	display:table;
+}
+.sideMid .priceInput input {
+	width: 100%;
+}
+.align {
+	text-align:center;
+}
+.priceFrom {
+	float:left;
+	width:30%;
+}
+.priceTo {
+	float:left;
+	width:30%;
+}
+.dash {
+	float:left;
+	width: 10%
+}
+.priceSearchButton {
+	float:left;
+	width: 20%
+}
