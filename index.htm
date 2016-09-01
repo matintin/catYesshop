@@ -5,8 +5,10 @@
 	<title>Calalog</title>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
+	<script src="script.js"></script>
 	<div class="top"></div>
 	<div class="container">
 		<div class="bannerImg" style="background-image:url(http://lorempixel.com/1920/400/fashion/7/);">
@@ -22,7 +24,7 @@
 						<div class="sideMid">
 							<div class="researchWrap clear">
 								<input type="text" class="research" placeholder="RE-SEARCH" />
-								<div class="researchButton">
+								<div class="researchButton cursor">
 									<i class="icon ion-search"></i>
 								</div>
 							</div>
@@ -75,9 +77,9 @@
 							</div>
 							<div class="dash">-</div>
 							<div class="priceTo priceInput">
-								<input type="text" />
+								<input class="borRN" type="text" />
 							</div>
-							<div class="priceSearchButton">
+							<div class="priceSearchButton cursor">
 								<i class="icon ion-search"></i>
 							</div>
 						</div>
@@ -86,38 +88,362 @@
 						<div class="sideTop">
 							<p class="textIndent"><i class="icon ion-videocamera"></i>ON AIR</p>
 						</div>
-						<div class="sideMid"></div>
+						<div class="sideMid">
+							<div class="onAirWrap">
+								<div class="onAirImgWrap">
+									<img src="vest.jpg" alt="">
+								</div>
+								<p class="onAirName">[ON AIR] Blended Duck Insulated Vest</p>
+								<p class="onAirPrice">$199.00</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="rightSide">
 					<ul class="list">
-						<li class="sortBy">Recommend</li>
-						<li class="sortBy">Best</li>
-						<li class="sortBy">Low Price</li>
-						<li class="sortBy">High Price</li>
-						<li class="option"><a href="#"></a></li>
-						<li class="option">
-							<div class="selectBox" id="select2">
-								<select name="rowPage" id="rowPage">
-									<option value="20">20</option>
-									<option value="50">50</option>
-								</select>
-							</div>
-						</li>
+						<li class="sortBy marR10"><a href="">Price Low to High</a></li>
+						<p class="floatL">|</p>
+						<li class="sortBy marL10 marR10"><a href="">Price High to Low</a></li>
+						<p class="floatL">|</p>
+						<li class="sortBy marL10 marR10"><a href="">Newest</a></li>
+						<p class="floatL">|</p>
+						<li class="sortBy marL10"><a href="">Most Reviewed</a></li>
+												
 					</ul>
 					<div class="itemsWrap">
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
-						<div class="items"></div>
+						<div class="itemRow marB40 clear">
+							<div class="items marR20">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+										<div class="onAirTime">
+											<p><span class="onAirTxt">ON AIR</span><span class="marL5 marR5">|</span>06.01 WED PM 03:00</p>
+										</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items marR20">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><!-- itemRow -->	
+						<div class="itemRow marB40 clear">
+							<div class="items marR20">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+										<div class="onAirTime">
+											<p><span class="onAirTxt">ON AIR</span><span class="marL5 marR5">|</span>06.01 WED PM 03:00</p>
+										</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items marR20">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><!-- itemRow -->	
+						<div class="itemRow marB40 clear">
+							<div class="items marR20">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items marR20">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items">
+								<a class="itemLink" href="#">
+									<div class="blank"></div>
+									<div class="itemWrap">
+										<div class="itemImg">
+											<img src="vest.jpg" alt="">
+										</div>
+										<div class="itemPrice marT10">$519.00</div>
+										<div class="itemName">Something's name</div>
+									</div>
+									<div class="itemBot clear">
+										<div class="itemReview floatL">
+											<div class="reviewBalloon">
+												<img class="hoverImg" src="talkBalloon.png" alt="">
+											</div>
+											<p class="reviewNo">999</p>
+										</div>
+										<div class="itemCart floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="cart.png" alt="">
+											</a>
+										</div>
+										<div class="itemWish floatR marL10">
+											<a href="">
+												<img class="hoverImg" src="wish.png" alt="">
+											</a>
+										</div>
+										<div class="itemOnAir floatR">
+											<a href="">
+												<img class="hoverImg" src="onAir.png" alt="">
+											</a>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><!-- itemRow -->										
 					</div>
 				</div>
 			</div><!-- sideWrap -->
